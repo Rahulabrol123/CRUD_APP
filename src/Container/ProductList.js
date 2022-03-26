@@ -1,5 +1,5 @@
 import React,{useState,useEffect} from 'react';
-import Product from './product';
+
 import '../App.css';
 
 const data=require('../products.json');
@@ -11,15 +11,18 @@ const ProductList=(props)=>{
     return(
         <div className='container'>
              {data.length>0 ? data.map((d,i)=>
-            <div className='list' >
+            <div className='list' key={i}>
                <div className='details'>
-               <h1>
-                  hello
-                   {d.name}
+               <h1 className='title'>
+                  
+                   {d.title}
 
                 </h1>
+                <h3>
+                    {d.description}
+                </h3>
                 <h2>
-                    ${d.price}
+                   Category: {d.category}
                 </h2>
                    </div>
               
