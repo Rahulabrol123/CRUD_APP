@@ -1,0 +1,13 @@
+.form{
+    
+   width: fit-content;
+   display: flex;
+   flex-direction: column;
+}
+.container{
+   
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 500px
+}
